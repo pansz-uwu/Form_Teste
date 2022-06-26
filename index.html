@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabeçalho">
+        <h1>Form Test</h1>
+        <h3>Complete as informações</h3>
+    </header>
+
+    <main>
+        <form>
+            <div class="card">
+                <fieldset class="login">
+                    <div class="email">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="senha">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha">
+                    </div>
+                </fieldset>
+                <div class="perguntas">
+                    <label class="pergunta">Tipo de Pergunta 1:</label><br>
+                    <div class="tipo_pergunta_1">
+                        <label class="resposta">
+                            <input class="input_p_1" type="radio" name="devweb" value="algo_1">Algo_1 
+                        </label>
+                        <label class="resposta">
+                            <input class="input_p_1" type="radio" name="devweb" value="algo_2">Algo_2 
+                        </label>
+                        <label class="resposta">
+                            <input class="input_p_1" type="radio" name="devweb" value="algo_3">Algo_3 
+                        </label>
+                    </div>
+
+                    <div class="tipo_pergunta_2">
+                        <label class="pergunta">Tipo de Pergunta 2:</label><br>
+                        <select id="tipo_2">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Algo_1</option>
+                            <option>Algo_2</option>
+                            <option>Algo_3</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="checkbox_geral">
+                        <label class="pergunta">Tipo de Pergunta 3:</label><br>
+                        <div class="form_checkbox">
+                            <input class="input_checkbox" type="checkbox" id="tec1" name="tec1" value="Algo_1">
+                            <label class="resposta" for="tec1">Algo_1</label>
+                            <input class="input_checkbox" type="checkbox" id="tec1" name="tec2" value="Algo_2">
+                            <label class="resposta" for="tec2">Algo_2</label>
+                            <input class="input_checkbox" type="checkbox" id="tec1" name="tec3" value="Algo_3">
+                            <label class="resposta" for="tec3">Algo_3</label>
+                            <input class="input_checkbox" type="checkbox" id="tec1" name="tec4" value="Algo_4">
+                            <label class="resposta" for="tec4">Algo_4</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="text_exp">
+                        <label class="pergunta">Tipo de Pergunta 4:</label><br>
+                        <textarea class="area_texto" cols="55" rows="6" id="exp" name="exp"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit">Concluído</button>
+            </div>
+        </form>
+        <!-- <div style="height: 9000px;"></div> -->
+    </main>
+</body>
+</html>

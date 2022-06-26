@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color_1: #222831;
+    --color_2: #393E46;
+    --color_3: #00ADB5;
+    --color_4: #EEEEEE;
+}
+
+header {
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color_3);
+    color: var(--color_1);
+}
+
+main {
+    width: 100vw;
+    height: 95vh;
+    background-image: url('https://wallpaperaccess.com/full/1579893.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color_1);
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.login {
+    color: var(--color_4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 15px 0;
+}
+
+.email > input {
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 3px 4px;
+}
+
+.senha > input {
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 3px 4px;
+}
+
+.pergunta {
+    color: var(--color_3);
+}
+.resposta {
+    color: var(--color_4);
+}
+
+.tipo_pergunta_1 {
+    padding: 10px 0;
+}
+
+.tipo_pergunta_2 {
+    padding: 10px 0;
+}
+.checkbox_geral {
+    padding: 10px 0;
+}
+.text_exp {
+    padding: 10px 0;
+}
+
+.form_checkbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+.input_checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin: 0 3px 0 10px;
+    border-radius: 3px;
+}
+
+.input_checkbox:checked {
+    background-color: var(--color_3);
+}
+
+.input_checkbox:checked::after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: 3px solid var(--color_1);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 6px;
+}
+
+.card > button {
+    width: 100%;
+    padding: 16px;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--color_1);
+    background: var(--color_3);
+    cursor: pointer;
+}
